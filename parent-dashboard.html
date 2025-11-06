@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Dashboard - Nandha College of Pharmacy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mortar-pestle"></i> NCP
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="text-center mb-2">
+                <img src="https://via.placeholder.com/80" alt="Parent Photo" class="profile-photo" style="width: 80px; height: 80px;">
+                <h3>Mr. David Doe</h3>
+                <p>Parent</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-user-graduate"></i> Student Profile</a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Academic Performance</a></li>
+                <li><a href="#"><i class="fas fa-money-bill"></i> Fee Details</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Student Profile Section -->
+            <section class="dashboard-card">
+                <div class="profile-section">
+                    <img src="https://via.placeholder.com/150" alt="Student Photo" class="profile-photo">
+                    <div>
+                        <h2>John Doe</h2>
+                        <p>Roll Number: NCP2025001</p>
+                        <p>Course: B.Pharm</p>
+                        <p>Year: 2nd Year</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Attendance Summary -->
+            <section class="dashboard-card">
+                <h3>Attendance Summary</h3>
+                <div class="grid grid-cols-3">
+                    <div class="text-center">
+                        <h4>Total Classes</h4>
+                        <p>120</p>
+                    </div>
+                    <div class="text-center">
+                        <h4>Present</h4>
+                        <p>110</p>
+                    </div>
+                    <div class="text-center">
+                        <h4>Attendance %</h4>
+                        <p>91.67%</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Performance -->
+            <section class="dashboard-card">
+                <h3>Academic Performance</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Internal 1</th>
+                            <th>Internal 2</th>
+                            <th>Internal 3</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pharmaceutical Chemistry</td>
+                            <td>85</td>
+                            <td>88</td>
+                            <td>90</td>
+                            <td>87.67</td>
+                        </tr>
+                        <tr>
+                            <td>Pharmacology</td>
+                            <td>82</td>
+                            <td>85</td>
+                            <td>88</td>
+                            <td>85.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Fee Status -->
+            <section class="dashboard-card">
+                <h3>Fee Status</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Fee Type</th>
+                            <th>Amount</th>
+                            <th>Due Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tuition Fee</td>
+                            <td>₹75,000</td>
+                            <td>2025-12-31</td>
+                            <td><span class="badge" style="background-color: #4CAF50; color: white; padding: 5px 10px; border-radius: 3px;">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td>Laboratory Fee</td>
+                            <td>₹15,000</td>
+                            <td>2025-12-31</td>
+                            <td><span class="badge" style="background-color: #4CAF50; color: white; padding: 5px 10px; border-radius: 3px;">Paid</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Parent-Teacher Meeting -->
+            <section class="dashboard-card">
+                <h3>Parent-Teacher Meeting Schedule</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Faculty</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-11-15</td>
+                            <td>10:00 AM</td>
+                            <td>Dr. Sarah Johnson</td>
+                            <td>
+                                <button class="btn btn-primary">Confirm</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal Dashboard - Nandha College of Pharmacy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mortar-pestle"></i> NCP
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="text-center mb-2">
+                <img src="https://via.placeholder.com/80" alt="Principal Photo" class="profile-photo" style="width: 80px; height: 80px;">
+                <h3>Dr. Robert Wilson</h3>
+                <p>Principal</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> College Overview</a></li>
+                <li><a href="#"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Faculty Management</a></li>
+                <li><a href="#"><i class="fas fa-graduation-cap"></i> Student Performance</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section class="dashboard-card">
+                <div class="profile-section">
+                    <img src="https://via.placeholder.com/150" alt="Principal Photo" class="profile-photo">
+                    <div>
+                        <h2>Dr. Robert Wilson</h2>
+                        <p>Position: Principal</p>
+                        <p>Qualification: Ph.D in Pharmaceutical Sciences</p>
+                        <p>Experience: 25 years</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- College Overview Stats -->
+            <section class="dashboard-card">
+                <h3>College Overview</h3>
+                <div class="grid grid-cols-3">
+                    <div class="text-center">
+                        <i class="fas fa-user-graduate fa-2x"></i>
+                        <h4>Total Students</h4>
+                        <p>850</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-chalkboard-teacher fa-2x"></i>
+                        <h4>Total Faculty</h4>
+                        <p>45</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-chart-pie fa-2x"></i>
+                        <h4>Pass Percentage</h4>
+                        <p>92%</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Announcements Management -->
+            <section class="dashboard-card">
+                <h3>Announcements</h3>
+                <div class="form-group">
+                    <label for="announcement-title">Title</label>
+                    <input type="text" class="form-control" id="announcement-title">
+                </div>
+                <div class="form-group">
+                    <label for="announcement-content">Content</label>
+                    <textarea class="form-control" id="announcement-content" rows="4"></textarea>
+                </div>
+                <button class="btn btn-primary">Post Announcement</button>
+
+                <h4 class="mt-2">Recent Announcements</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-11-06</td>
+                            <td>Annual Day Celebration</td>
+                            <td>
+                                <button class="btn btn-primary">Edit</button>
+                                <button class="btn btn-primary">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Faculty Management -->
+            <section class="dashboard-card">
+                <h3>Faculty Management</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NCP-FAC-001</td>
+                            <td>Dr. Sarah Johnson</td>
+                            <td>Pharmacology</td>
+                            <td>Active</td>
+                            <td>
+                                <button class="btn btn-primary">View</button>
+                                <button class="btn btn-primary">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Student Performance Summary -->
+            <section class="dashboard-card">
+                <h3>Student Performance Summary</h3>
+                <div class="grid grid-cols-2">
+                    <div>
+                        <h4>Department-wise Performance</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Department</th>
+                                    <th>Pass %</th>
+                                    <th>Distinction %</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>B.Pharm</td>
+                                    <td>92%</td>
+                                    <td>45%</td>
+                                </tr>
+                                <tr>
+                                    <td>M.Pharm</td>
+                                    <td>95%</td>
+                                    <td>55%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h4>Year-wise Analysis</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Average CGPA</th>
+                                    <th>Placement %</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1st Year</td>
+                                    <td>8.5</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Final Year</td>
+                                    <td>8.8</td>
+                                    <td>85%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

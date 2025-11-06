@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Nandha College of Pharmacy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mortar-pestle"></i> NCP
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="text-center mb-2">
+                <img src="https://via.placeholder.com/80" alt="Student Photo" class="profile-photo" style="width: 80px; height: 80px;">
+                <h3>John Doe</h3>
+                <p>Student</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Marks</a></li>
+                <li><a href="#"><i class="fas fa-download"></i> Downloads</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section class="dashboard-card">
+                <div class="profile-section">
+                    <img src="https://via.placeholder.com/150" alt="Student Photo" class="profile-photo">
+                    <div>
+                        <h2>John Doe</h2>
+                        <p>Roll Number: NCP2025001</p>
+                        <p>Course: B.Pharm</p>
+                        <p>Year: 2nd Year</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Attendance Summary -->
+            <section class="dashboard-card">
+                <h3>Attendance Summary</h3>
+                <div class="grid grid-cols-3">
+                    <div class="text-center">
+                        <h4>Total Classes</h4>
+                        <p>120</p>
+                    </div>
+                    <div class="text-center">
+                        <h4>Present</h4>
+                        <p>110</p>
+                    </div>
+                    <div class="text-center">
+                        <h4>Attendance %</h4>
+                        <p>91.67%</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Subjects List -->
+            <section class="dashboard-card">
+                <h3>Current Subjects</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Faculty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PHR201</td>
+                            <td>Pharmaceutical Chemistry</td>
+                            <td>Dr. Smith</td>
+                        </tr>
+                        <tr>
+                            <td>PHR202</td>
+                            <td>Pharmacology</td>
+                            <td>Dr. Johnson</td>
+                        </tr>
+                        <tr>
+                            <td>PHR203</td>
+                            <td>Pharmaceutics</td>
+                            <td>Dr. Williams</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Internal Marks -->
+            <section class="dashboard-card">
+                <h3>Internal Assessment Marks</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Test 1</th>
+                            <th>Test 2</th>
+                            <th>Test 3</th>
+                            <th>Average</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pharmaceutical Chemistry</td>
+                            <td>85</td>
+                            <td>88</td>
+                            <td>90</td>
+                            <td>87.67</td>
+                        </tr>
+                        <tr>
+                            <td>Pharmacology</td>
+                            <td>82</td>
+                            <td>85</td>
+                            <td>88</td>
+                            <td>85.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pharmaceutics</td>
+                            <td>87</td>
+                            <td>89</td>
+                            <td>92</td>
+                            <td>89.33</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Downloads Section -->
+            <section class="dashboard-card">
+                <h3>Downloads</h3>
+                <div class="grid grid-cols-2">
+                    <a href="#" class="btn btn-primary mb-2">
+                        <i class="fas fa-calendar"></i> Class Timetable
+                    </a>
+                    <a href="#" class="btn btn-primary mb-2">
+                        <i class="fas fa-book"></i> Study Materials
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

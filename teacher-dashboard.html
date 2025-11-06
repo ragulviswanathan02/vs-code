@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Nandha College of Pharmacy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mortar-pestle"></i> NCP
+            </a>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="text-center mb-2">
+                <img src="https://via.placeholder.com/80" alt="Teacher Photo" class="profile-photo" style="width: 80px; height: 80px;">
+                <h3>Dr. Sarah Johnson</h3>
+                <p>Professor</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> My Classes</a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Marks Entry</a></li>
+                <li><a href="#"><i class="fas fa-upload"></i> Upload Materials</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section class="dashboard-card">
+                <div class="profile-section">
+                    <img src="https://via.placeholder.com/150" alt="Teacher Photo" class="profile-photo">
+                    <div>
+                        <h2>Dr. Sarah Johnson</h2>
+                        <p>Department: Pharmacology</p>
+                        <p>Employee ID: NCP-FAC-001</p>
+                        <p>Experience: 10 years</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Class/Subject List -->
+            <section class="dashboard-card">
+                <h3>My Classes</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Subject</th>
+                            <th>Students</th>
+                            <th>Schedule</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.Pharm 2nd Year</td>
+                            <td>Pharmacology I</td>
+                            <td>60</td>
+                            <td>Mon, Wed, Fri</td>
+                        </tr>
+                        <tr>
+                            <td>B.Pharm 3rd Year</td>
+                            <td>Pharmacology II</td>
+                            <td>55</td>
+                            <td>Tue, Thu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Attendance Entry -->
+            <section class="dashboard-card">
+                <h3>Attendance Entry</h3>
+                <div class="form-group">
+                    <label for="class-select">Select Class</label>
+                    <select class="form-control" id="class-select">
+                        <option>B.Pharm 2nd Year - Pharmacology I</option>
+                        <option>B.Pharm 3rd Year - Pharmacology II</option>
+                    </select>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Student Name</th>
+                            <th>Status</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NCP2025001</td>
+                            <td>John Doe</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>Present</option>
+                                    <option>Absent</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary mt-2">Save Attendance</button>
+            </section>
+
+            <!-- Mark Entry Form -->
+            <section class="dashboard-card">
+                <h3>Mark Entry</h3>
+                <div class="form-group">
+                    <label for="exam-select">Select Examination</label>
+                    <select class="form-control" id="exam-select">
+                        <option>Internal Test 1</option>
+                        <option>Internal Test 2</option>
+                        <option>Internal Test 3</option>
+                    </select>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Roll No</th>
+                            <th>Student Name</th>
+                            <th>Marks (Max: 100)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NCP2025001</td>
+                            <td>John Doe</td>
+                            <td>
+                                <input type="number" class="form-control" min="0" max="100">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary mt-2">Save Marks</button>
+            </section>
+
+            <!-- Upload Materials -->
+            <section class="dashboard-card">
+                <h3>Upload Study Materials</h3>
+                <div class="form-group">
+                    <label for="material-type">Material Type</label>
+                    <select class="form-control" id="material-type">
+                        <option>Notes</option>
+                        <option>Presentation</option>
+                        <option>Question Bank</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="file-upload">Upload File</label>
+                    <input type="file" class="form-control" id="file-upload">
+                </div>
+                <button class="btn btn-primary">Upload</button>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

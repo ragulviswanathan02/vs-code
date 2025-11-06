@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nandha College of Pharmacy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mortar-pestle"></i> NCP
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2 class="text-center mb-2">Portal Login</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="role">Select Role</label>
+                <select class="form-control" id="role" required>
+                    <option value="">Choose your role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="principal">Principal</option>
+                    <option value="parent">Parent</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="userid">User ID</label>
+                <input type="text" class="form-control" id="userid" placeholder="Enter your user ID" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            <p class="text-center mt-2">
+                <a href="#">Forgot Password?</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nandha College of Pharmacy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
